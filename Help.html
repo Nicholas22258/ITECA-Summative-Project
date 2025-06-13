@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--Nicholas Leong EDUV4551823-->
+<html dir = "ltr" lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Help</title>
+        <link rel = "stylesheet" href = "Help.css">
+        <link rel = "stylesheet" href = "Header_And_Footer.css">
+                
+        <script src = "LogIn.js"></script>
+        <script src = "Help.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <img src = "images_main/Logo.png" alt = "Nick C2C Logo" id = "logo" onclick = "window.open('index.php', '_self')">
+            <div id = "buy_sell">
+                <label id = "buy" onclick = "window.open('index.php', '_self')">Buy</label>
+                <label id = "sell" onclick = "whichScreen()">Sell</label>
+            </div>
+            <div id = "searchbox">
+                <form action = "Search.php" method = "GET">
+                    <input type = "text" id = "search" name = "search">
+                    <input type = "submit" id = "btnSearch" value = "Search">
+                </form>
+            </div>
+            <div id = "account">
+                <label id = "user" onclick = "whichScreen()" onload = "LogIn.js">Log In</label>
+            </div>
+        </header>
+        
+        <main>
+            <div id = "heading">
+                <h2>Need Help? Send a message to the administrator here:</h2>
+            </div>
+            <div id = "details">
+                <form action = "Help.php" method = "POST">
+                    <label for = "email">Email: </label><br>
+                    <input type = "text" id = "email" name = "email" class = "inputBoxes"><br>
+                    <label for = "title">Title </label><br>
+                    <input type = "text" id = "title" name = "title" class = "inputBoxes"><br>
+                    <label for = "message">Message: </label><br>
+                    <textarea id = "message" name = "message" rows = "5" cols = "50"></textarea><br><br>
+                    <input type = "submit" id = "submit" name = "submit" value = "Submit"><br>
+                </form>
+            </div>
+            <div id = "FAQ">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details>
+                    <summary>How do I sell?</summary>
+                    <p class = "info">
+                        1. Sign in <a href = "LogIn.html" target = "_self">here</a>. If you don't have an account, create one <a href = "SignUp.html" target = "_self">here</a><br>
+                        2. Click the plus button under your "Your Items:" heading.<br>
+                        3. Fill in the relevant information about the item you wish to sell. Please note that you can only upload one picture of the item.<br>
+                        4. Click "Add Item".<br>
+                    </p>
+                </details>
+                <details>
+                    <summary>How do I buy?</summary>
+                    <p class = "info">
+                        NickC2C does not have any built-in payment services. In order to buy an item, you must contact the owner of that item via his/her provided email address. Payments are negotiated between you and the seller, and occur independent of NickC2C.
+                    </p>
+                </details>
+                <details>
+                    <summary>Is this a real website?</summary>
+                    <p class = "info">
+                        NickC2C is a real website, and can be used for customer-to-customer e-commerce. However, the items you see here are fake and is being used as dummy data for a project.
+                    </p>
+                </details>
+                <details>
+                    <summary>Does this website use cookies?</summary>
+                    <p class = "info">
+                        NickC2C uses cookies to function properly.
+                    </p>
+                </details>
+            </div>
+        </main>
+
+        <footer>
+            <div id = "socialMedia">
+                <img src = "images_main/Facebook.png" alt = "Facebook Logo" id = "facebook" class = "footerImages">
+                <img src = "images_main/LinkedIn.png" alt = "LinkedIn Logo" id = "linkedin" class = "footerImages">
+            </div>
+            <div id = "footerLabels">
+                <label id = "aboutUs" onclick = "window.open('AboutUs.html', '_self')">About Us</label>
+                <label id = "help" onclick = "window.open('Help.html', '_self')">Help</label>
+                <label id = "businessPolicies" onclick = "window.open('BusinessPolicies.html', '_self')">Business Policies</label>
+                <label id = "copyright">Copyright Reserved</label>
+            </div>
+        </footer>
+    </body>
+</html>

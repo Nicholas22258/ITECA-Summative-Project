@@ -1,0 +1,165 @@
+/* 
+    Created on : 11 Mar 2025, 15:05:33
+    Author     : Nicholas Leong EDUV4551823
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 4.5cm;
+        height: 11cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .pic{
+        min-width: 4.5cm;
+        min-height: 4.5cm;
+    }
+
+    .information{
+        margin: 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 4.8cm;
+        height: 11cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .pic{
+        min-width: 4.8cm;
+        min-height: 4.8cm;
+    }
+
+    .information{
+        margin: 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 11cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .pic{
+        min-width: 5cm;
+        min-height: 5cm;
+    }
+
+    .information{
+        margin: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 6cm;
+        height: 11cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .pic{
+        min-width: 6cm;
+        min-height: 6cm;
+    }
+
+    .information{
+        margin: 5px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main{
+        display: grid;
+        column-gap: 8px;
+        row-gap: 10px;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 6cm;
+        height: 11cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .pic{
+        min-width: 6cm;
+        min-height: 6cm;
+    }
+
+    .information{
+        margin: 5px;
+    }
+}

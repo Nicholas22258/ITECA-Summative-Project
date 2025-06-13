@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--Nicholas Leong EDUV4551823-->
+<html dir = "ltr" lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel = "stylesheet" href = "AboutUs.css">
+        <link rel = "stylesheet" href = "Header_And_Footer.css">
+                
+        <script src = "LogIn.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <img src = "images_main/Logo.png" alt = "Nick C2C Logo" id = "logo" onclick = "window.open('index.php', '_self')">
+            <div id = "buy_sell">
+                <label id = "buy" onclick = "window.open('index.php', '_self')">Buy</label>
+                <label id = "sell" onclick = "whichScreen()">Sell</label>
+            </div>
+            <div id = "searchbox">
+                <form action = "Search.php" method = "GET">
+                    <input type = "text" id = "search" name = "search">
+                    <input type = "submit" id = "btnSearch" value = "Search">
+                </form>
+            </div>
+            <div id = "account">
+                <label id = "user" onclick = "whichScreen()" onload = "LogIn.js">Log In</label>
+            </div>
+        </header>
+        
+        <main>
+            <div>
+                <h2>About Us</h2>
+            </div>
+            <div id = "article">
+                
+                <div id = "mainPar">
+                    <p>
+                        This website was created to be a platform on which South Africans can easily
+                        buy and sell items to each other.* This platform is designed to be easy to use,
+                        and is designed to ensure that users are in a position to trade with each other freely
+                        and effectively.
+                    </p>
+                </div>
+                <div id = "ps">
+                    <p>
+                        *This website was actually created as a university project. 
+                        By using this platform to conduct any business, you agree that you take responsibility for all payments, 
+                        item transferals and electronic security that is conducted by you.
+                        Similarly, any items you see here is dummy data.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id = "socialMedia">
+                <img src = "images_main/Facebook.png" alt = "Facebook Logo" id = "facebook" class = "footerImages">
+                <img src = "images_main/LinkedIn.png" alt = "LinkedIn Logo" id = "linkedin" class = "footerImages">
+            </div>
+            <div id = "footerLabels">
+                <label id = "aboutUs" onclick = "window.open('AboutUs.html', '_self')">About Us</label>
+                <label id = "help" onclick = "window.open('Help.html', '_self')">Help</label>
+                <label id = "businessPolicies" onclick = "window.open('BusinessPolicies.html', '_self')">Business Policies</label>
+                <label id = "copyright">Copyright Reserved</label>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,851 @@
+/* 
+    Created on : 15 Mar 2025, 14:15:58
+    Author     : Nicholas Leong EDUV4551823
+*/
+
+/*#profilePic{
+    display: flex;
+}
+
+#profilePicture{
+    height: 3.5cm; 
+    width: 3.5cm;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#changePicture{
+    height: 0.9cm;
+    width: 2cm;
+}*/
+
+/*#gridLayout{
+    display: grid;
+    grid-template-rows:   Define rows  
+    gap: 20px;  Space between the grid items  
+}*/
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .columns{
+        height: 100vh;
+        /*border: 1.5px solid black;*/
+    }
+
+/*==========================Personal Information==============================*/
+
+    #personalInfo{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100vh;
+    }
+
+    .inputBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #save{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+    #innerDIV{
+        width: 100%;
+        /*border: 1.5px solid black;*/
+        float: bottom;
+        display: block;
+    }
+
+    #password{
+        width: 4cm;
+        height: 2cm;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        /*float: left;*/
+    }
+
+    #logOut{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    #deleteAccount{
+        height: 2cm;
+        width: 4cm;
+        float: right;
+        background-color: #f04a4a;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+/*=============================Change Password================================*/
+
+    #changePasswordDIV{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100%;
+    }
+
+    .passwordBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #changePassword{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+/*=============================Your Items=====================================*/
+    #column3{
+        /*border: 1.5px solid green;*/
+        align-content: center;
+        width: 11cm;
+        max-height: 100vh;
+    }
+    
+    #yourItems{
+        float: right;
+        right: 0;
+        border: 1.5px solid black;
+        margin-left: auto;
+        min-width: 10cm;
+        width: 11cm;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    #itemsLabel{
+       font-size: 16px;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 10cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    .pic{
+        min-width: 5cm;
+        min-height: 5cm;
+    }
+
+    #delete{
+        background-color: tomato;
+    }
+
+
+    .information{
+        margin: 5px;
+    }
+
+    #addItem{
+        float: inside;
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 5cm;
+        white-space: wrap;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    #addItemPic{
+        max-width: 5cm;
+        max-height: 5cm;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .columns{
+        height: 100vh;
+        /*border: 1.5px solid black;*/
+        padding: 14px;
+    }
+
+/*==========================Personal Information==============================*/
+
+    #personalInfo{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100vh;
+    }
+
+    .inputBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #save{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+    #innerDIV{
+        width: 100%;
+        /*border: 1.5px solid black;*/
+        float: bottom;
+        display: block;
+    }
+
+    #password{
+        width: 4cm;
+        height: 2cm;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        /*float: left;*/
+    }
+
+    #logOut{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    #deleteAccount{
+        height: 2cm;
+        width: 4cm;
+        float: right;
+        background-color: #f04a4a;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+/*=============================Change Password================================*/
+
+    #changePasswordDIV{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100%;
+    }
+
+    .passwordBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #changePassword{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+/*=============================Your Items=====================================*/
+    #column3{
+        /*border: 1.5px solid green;*/
+        align-content: center;
+        width: 11cm;
+        max-height: 100vh;
+    }
+    
+    #yourItems{
+        float: right;
+        right: 0;
+        border: 1.5px solid black;
+        margin-left: auto;
+        min-width: 10cm;
+        width: 11cm;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    #itemsLabel{
+       font-size: 16px;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 10cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    .pic{
+        min-width: 5cm;
+        min-height: 5cm;
+    }
+
+    #delete{
+        background-color: tomato;
+    }
+
+
+    .information{
+        margin: 5px;
+    }
+
+    #addItem{
+        float: inside;
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 5cm;
+        white-space: wrap;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    #addItemPic{
+        max-width: 5cm;
+        max-height: 5cm;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .columns{
+        height: 100vh;
+        /*border: 1.5px solid black;*/
+        padding: 14px;
+    }
+
+/*==========================Personal Information==============================*/
+
+    #personalInfo{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100vh;
+    }
+
+    .inputBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #save{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+    #innerDIV{
+        width: 100%;
+        /*border: 1.5px solid black;*/
+        float: bottom;
+        display: block;
+    }
+
+    #password{
+        width: 4cm;
+        height: 2cm;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        /*float: left;*/
+    }
+
+    #logOut{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    #deleteAccount{
+        height: 2cm;
+        width: 4cm;
+        float: right;
+        background-color: #f04a4a;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+/*=============================Change Password================================*/
+
+    #changePasswordDIV{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100%;
+    }
+
+    .passwordBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #changePassword{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+/*=============================Your Items=====================================*/
+    #column3{
+        /*border: 1.5px solid green;*/
+        align-content: center;
+        width: 11cm;
+        max-height: 100vh;
+    }
+
+    #yourItems{
+        float: right;
+        right: 0;
+        border: 1.5px solid black;
+        margin-left: auto;
+        min-width: 10cm;
+        width: 11cm;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+        margin-left: 10px;
+    }
+
+    #itemsLabel{
+       font-size: 16px;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 10cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    .pic{
+        min-width: 5cm;
+        min-height: 5cm;
+    }
+
+    #delete{
+        background-color: tomato;
+    }
+
+
+    .information{
+        margin: 5px;
+    }
+
+    #addItem{
+        float: inside;
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 5cm;
+        white-space: wrap;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    #addItemPic{
+        max-width: 5cm;
+        max-height: 5cm;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .columns{
+        height: 100vh;
+        /*border: 1.5px solid black;*/
+        padding: 14px;
+    }
+
+/*==========================Personal Information==============================*/
+
+    #personalInfo{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100vh;
+    }
+
+    .inputBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #save{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+    #innerDIV{
+        width: 100%;
+        /*border: 1.5px solid black;*/
+        float: bottom;
+        display: block;
+    }
+
+    #password{
+        width: 4cm;
+        height: 2cm;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        /*float: left;*/
+    }
+
+    #logOut{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    #deleteAccount{
+        height: 2cm;
+        width: 4cm;
+        float: right;
+        background-color: #f04a4a;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+/*=============================Change Password================================*/
+
+    #changePasswordDIV{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100%;
+    }
+
+    .passwordBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #changePassword{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+/*=============================Your Items=====================================*/
+    #column3{
+        /*border: 1.5px solid green;*/
+        align-content: center;
+        width: 11cm;
+        max-height: 100vh;
+    }
+
+    #yourItems{
+        float: right;
+        right: 0;
+        border: 1.5px solid black;
+        margin-left: auto;
+        min-width: 10cm;
+        width: 11cm;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+        margin-top: -8px;
+    }
+
+    #itemsLabel{
+       font-size: 16px;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 10cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    .pic{
+        min-width: 5cm;
+        min-height: 5cm;
+    }
+
+    #delete{
+        background-color: tomato;
+    }
+
+
+    .information{
+        margin: 5px;
+    }
+
+    #addItem{
+        float: inside;
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 5cm;
+        white-space: wrap;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    #addItemPic{
+        max-width: 5cm;
+        max-height: 5cm;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main{
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .columns{
+        height: 100vh;
+        /*border: 1.5px solid black;*/
+        padding: 14px;
+    }
+
+/*==========================Personal Information==============================*/
+
+    #personalInfo{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100vh;
+    }
+
+    .inputBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #save{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+    #innerDIV{
+        width: 100%;
+        /*border: 1.5px solid black;*/
+        float: bottom;
+        display: block;
+    }
+
+    #password{
+        width: 4cm;
+        height: 2cm;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        /*float: left;*/
+    }
+
+    #logOut{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    #deleteAccount{
+        height: 2cm;
+        width: 4cm;
+        float: right;
+        background-color: #f04a4a;
+        font-size: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+/*=============================Change Password================================*/
+
+    #changePasswordDIV{
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+        height: 100%;
+    }
+
+    .passwordBoxes{
+        width: 10cm;
+        height: 0.9cm;
+        border-radius: 10px;
+    }
+
+    #changePassword{
+        height: 2cm;
+        width: 4cm;
+        font-size: 10px;
+        float: left;
+        border-radius: 10px;
+    }
+
+/*=============================Your Items=====================================*/
+    #column3{
+        /*border: 1.5px solid green;*/
+        align-content: center;
+        width: 11cm;
+        max-height: 100vh;
+    }
+
+    #yourItems{
+        float: right;
+        right: 0;
+        border: 1.5px solid black;
+        margin-left: auto;
+        min-width: 10cm;
+        width: 10.5cm;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 50% 50%;
+        margin-top: -8px;
+    }
+
+    #itemsLabel{
+       font-size: 16px;
+    }
+
+    .itemborder{
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 10cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    .pic{
+        min-width: 5cm;
+        min-height: 5cm;
+    }
+
+    #delete{
+        background-color: tomato;
+    }
+
+
+    .information{
+        margin: 5px;
+    }
+
+    #addItem{
+        float: inside;
+        display: flex;
+        flex-direction: column;
+        width: 5cm;
+        height: 5cm;
+        white-space: wrap;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    #addItemPic{
+        max-width: 5cm;
+        max-height: 5cm;
+    }
+}

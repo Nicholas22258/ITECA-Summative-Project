@@ -1,0 +1,39 @@
+/* 
+    Created on : 27 Apr 2025, 16:38:09
+    Author     : Nicholas Leong EDUV4551823
+*/
+
+/*Auto scales*/
+
+main{
+    flex-grow: 1;
+}
+
+body{
+    align-content: center;
+    text-align: center;
+}
+
+#article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 20cm;
+    height: 80vh;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainPar{
+    float: top;
+    margin-top: 1%;
+    font-size: 16px;
+}
+
+#ps{
+    float: bottom;
+    bottom: 0;
+    font-size: 16px;
+}

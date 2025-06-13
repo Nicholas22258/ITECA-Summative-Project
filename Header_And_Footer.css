@@ -1,0 +1,716 @@
+/* 
+    Created on : 11 Mar 2025, 15:11:45
+    Author     : Nicholas Leong EDUV4551823
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    
+    main {
+        flex: 1;
+    }
+
+/*=============================Header=========================================*/
+
+    header {
+        min-height: 80px;
+        background: #f7c743;
+        display: flex;
+        height: 100px;
+    }
+
+    #logo{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    /*    position: absolute;*/
+    }
+
+    #buy_sell{
+        /*padding-left: 0.9cm;*/
+        display: grid;        
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-columns: 100%;
+        font-size: 10px;
+        /*border: 2px green solid;*/
+        /*line-height: 100px;*/
+        text-align: center;
+    }
+
+    #buy{
+        margin: 0;
+        top: 50%;
+    }
+
+    #sell{
+        margin: 0;
+        top: 50%;
+        padding-left: 0.5cm;
+    }
+
+    #searchbox{
+        padding-left: 1cm;
+        font-size: 20px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #search{
+        width: 1.8cm;
+        height: 0.60cm;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    #btnSearch{
+        height: 0.70cm;
+        width: 1.8cm;
+    }
+
+    #account{
+        padding-left: 1cm;
+        font-size: 10px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #logo:hover,
+    #buy:hover,
+    #sell:hover,
+    #user:hover{
+        cursor: pointer;
+    }
+
+/*=============================Footer=========================================*/
+
+    footer {
+        max-height: 2cm;
+        background: #f7c743;
+        display: flex;
+    }
+
+    #socialMedia{
+        line-height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerImages{
+        height: 25px;
+        width: 25px;
+        padding-left: 0.8cm;
+    }
+
+    #footerLabels{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 10px;
+        /*border: 2px green solid;*/
+        column-gap: 5px;
+        row-gap: 5px;
+        max-height: 1.6cm;
+        min-width: 300px;
+    }
+
+    #aboutUs{
+        top: 50%;
+        padding-left: 0.4cm; 
+    }
+
+    #help{
+        top: 50%;
+        padding-left: 0.4cm;
+    }
+
+    #businessPolicies{
+        top: 50%;
+        padding-left: 0.4cm;
+    }
+
+    #copyright{
+        top: 50%;
+        padding-left: 0.4cm;
+    }
+    
+    #aboutUs:hover,
+    #help:hover,
+    #businessPolicies:hover{
+        cursor: pointer;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    
+    main {
+        flex: 1;
+    }
+
+/*=============================Header=========================================*/
+
+    header {
+        min-height: 98px;
+        background: #f7c743;
+        display: flex;
+        height: 100px;
+    }
+
+    #logo{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+    /*    position: absolute;*/
+    }
+
+    #buy_sell{
+        padding-left: 0.9cm;
+        font-size: 12px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #buy{
+        margin: 0;
+        top: 50%;
+    }
+
+    #sell{
+        margin: 0;
+        top: 50%;
+        padding-left: 0.5cm;
+    }
+
+    #searchbox{
+        padding-left: 1.2cm;
+        font-size: 20px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #search{
+        width: 2.1cm;
+        height: 0.60cm;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    #btnSearch{
+        height: 0.70cm;
+        width: 2cm;
+    }
+
+    #account{
+        padding-left: 1.2cm;
+        font-size: 12px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #logo:hover,
+    #buy:hover,
+    #sell:hover,
+    #user:hover{
+        cursor: pointer;
+    }
+
+/*=============================Footer=========================================*/
+
+    footer {
+        max-height: 2.5cm;
+        background: #f7c743;
+        display: flex;
+    }
+
+    #socialMedia{
+        line-height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerImages{
+        height: 31px;
+        width: 31px;
+        padding-left: 0.8cm;
+    }
+
+    #footerLabels{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 12px;
+        /*border: 2px green solid;*/
+        column-gap: 7px;
+        row-gap: 5px;
+        max-height: 2.5cm;
+        min-width: 300px;
+    }
+
+    #aboutUs{
+        top: 50%;
+        padding-left: 0.9cm; 
+    }
+
+    #help{
+        top: 50%;
+        padding-left: 0.9cm;
+    }
+
+    #businessPolicies{
+        top: 50%;
+        padding-left: 0.9cm;
+    }
+
+    #copyright{
+        top: 50%;
+        padding-left: 0.9cm;
+    }
+    
+    #aboutUs:hover,
+    #help:hover,
+    #businessPolicies:hover{
+        cursor: pointer;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    
+    main {
+        flex: 1;
+    }
+
+/*=============================Header=========================================*/
+
+    header {
+        min-height: 110px;
+        background: #f7c743;
+        display: flex;
+        height: 110px;
+    }
+
+    #logo{
+        width: 98px;
+        height: 98px;
+        border-radius: 50%;
+    /*    position: absolute;*/
+    }
+
+    #buy_sell{
+        padding-left: 1.1cm;
+        font-size: 15px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #buy{
+        margin: 0;
+        top: 50%;
+    }
+
+    #sell{
+        margin: 0;
+        top: 50%;
+        padding-left: 0.9cm;
+    }
+
+    #searchbox{
+        padding-left: 1.8cm;
+        font-size: 20px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #search{
+        width: 4cm;
+        height: 0.60cm;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    #btnSearch{
+        height: 1cm;
+        width: 2.4cm;
+    }
+
+    #account{
+        padding-left: 1.2cm;
+        font-size: 12px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #logo:hover,
+    #buy:hover,
+    #sell:hover,
+    #user:hover{
+        cursor: pointer;
+    }
+
+/*=============================Footer=========================================*/
+
+    footer {
+        max-height: 3cm;
+        background: #f7c743;
+        display: flex;
+    }
+
+    #socialMedia{
+        line-height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerImages{
+        height: 31px;
+        width: 31px;
+        padding-left: 1.1cm;
+    }
+
+    #footerLabels{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 12px;
+        /*border: 2px green solid;*/
+        column-gap: 10px;
+        row-gap: 7px;
+        max-height: 3cm;
+        min-width: 300px;
+    }
+
+    #aboutUs{
+        top: 50%;
+        padding-left: 1.5cm; 
+    }
+
+    #help{
+        top: 50%;
+        padding-left: 1.5cm;
+    }
+
+    #businessPolicies{
+        top: 50%;
+        padding-left: 1.5cm;
+    }
+
+    #copyright{
+        top: 50%;
+        padding-left: 1.5cm;
+    }
+    
+    #aboutUs:hover,
+    #help:hover,
+    #businessPolicies:hover{
+        cursor: pointer;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    
+    main {
+        flex: 1;
+    }
+
+/*=============================Header=========================================*/
+
+    header {
+        min-height: 1cm;
+        background: #f7c743;
+        display: flex;
+        height: 125px;
+    }
+
+    #logo{
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+    /*    position: absolute;*/
+    }
+
+    #buy_sell{
+        padding-left: 1cm;
+        font-size: 20px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+        display: block;
+    }
+
+    #buy{
+        margin: 0;
+        top: 50%;
+    }
+
+    #sell{
+        margin: 0;
+        top: 50%;
+        padding-left: 1.5cm;
+    }
+
+    #searchbox{
+        padding-left: 2.1cm;
+        font-size: 20px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #search{
+        width: 8cm;
+        height: 0.60cm;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    #btnSearch{
+        height: 0.70cm;
+        width: 2.9cm;
+    }
+
+    #account{
+        padding-left: 2.9cm;
+        font-size: 20px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #logo:hover,
+    #buy:hover,
+    #sell:hover,
+    #user:hover{
+        cursor: pointer;
+    }
+
+/*=============================Footer=========================================*/
+
+    footer {
+        min-height: 1cm;
+        background: #f7c743;
+        display: flex;
+    }
+
+    #socialMedia{
+        line-height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerImages{
+        height: 50px;
+        width: 50px;
+        padding-left: 1cm;
+    }
+
+    #footerLabels{
+        display: flex;
+        font-size: 16px;
+        /*border: 2px green solid;*/
+        max-height: 3cm;
+        min-width: 300px;
+    }
+
+    #aboutUs{
+        top: 50%;
+        padding-left: 2cm; 
+    }
+
+    #help{
+        top: 50%;
+        padding-left: 2cm;
+    }
+
+    #businessPolicies{
+        top: 50%;
+        padding-left: 2cm;
+    }
+
+    #copyright{
+        top: 50%;
+        padding-left: 3cm;
+    }
+    
+    #aboutUs:hover,
+    #help:hover,
+    #businessPolicies:hover{
+        cursor: pointer;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    
+    main {
+        flex: 1;
+    }
+
+/*=============================Header=========================================*/
+
+    header {
+        min-height: 1.3229cm;
+        background: #f7c743;
+        display: flex;
+        height: 130px;
+    }
+
+    #logo{
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+    /*    position: absolute;*/
+    }
+
+    #buy_sell{
+        padding-left: 1.2cm;
+        font-size: 20px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+        display: block;
+    }
+
+    #buy{
+        margin: 0;
+        top: 50%;
+    }
+
+    #sell{
+        margin: 0;
+        top: 50%;
+        padding-left: 1.5cm;
+    }
+
+    #searchbox{
+        padding-left: 2.9cm;
+        font-size: 20px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #search{
+        width: 8.66cm;
+        height: 0.60cm;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    #btnSearch{
+        height: 0.70cm;
+        width: 3cm;
+    }
+
+    #account{
+        padding-left: 2.9cm;
+        font-size: 20px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #logo:hover,
+    #buy:hover,
+    #sell:hover,
+    #user:hover{
+        cursor: pointer;
+    }
+
+/*=============================Footer=========================================*/
+
+    footer {
+        min-height: 1.3229cm;
+        background: #f7c743;
+        display: flex;
+    }
+
+    #socialMedia{
+        line-height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerImages{
+        height: 50px;
+        width: 50px;
+        padding-left: 1.25cm;
+    }
+
+    #footerLabels{
+          padding-left: 2.9cm;
+        font-size: 20px;
+        /*border: 2px green solid;*/
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #aboutUs{
+        padding-left: 2.5cm; 
+    }
+
+    #help{
+        padding-left: 2.5cm;
+    }
+
+    #businessPolicies{
+        padding-left: 2.5cm;
+    }
+
+    #copyright{
+        padding-left: 5.1cm;
+    }
+    
+    #aboutUs:hover,
+    #help:hover,
+    #businessPolicies:hover{
+        cursor: pointer;
+    }
+}

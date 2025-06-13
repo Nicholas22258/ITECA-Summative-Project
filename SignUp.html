@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Nicholas Leong EDUV4551823-->
+<html dir = "ltr" lang = "en">
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "Header_And_Footer.css">
+        <link rel = "stylesheet" href = "SignUp.css">
+    </head>
+    <body>
+        <header>
+            <img src = "images_main/Logo.png" alt = "Nick C2C Logo" id = "logo" onclick = "window.open('index.php', '_self')">
+            <div id = "buy_sell">
+                <label id = "buy" onclick = "window.open('index.php', '_self')">Buy</label>
+                <label id = "sell">Sell</label>
+            </div>
+            <div id = "searchbox">
+                <form action = "Search.php" method = "GET">
+                    <input type = "text" id = "search" name = "search">
+                    <input type = "submit" id = "btnSearch" value = "Search">
+                </form>
+            </div>
+            <div id = "account">
+                <label id = "user">Log In</label>
+            </div>
+        </header>
+        
+        <main>
+            <form action = "SignUp.php" method = "POST">
+                <div id = "enterInfo">
+                    <label for = "username">Username:</label> 
+                    <input type = "text" id = "username" name = "username" required><br><br>
+                    <label for = "password">Password:</label>
+                    <input type = "password" id = "password" name = "password" required><br><br>
+                    <label for = "phonenumber">Phone Number:</label>
+                    <input type = "tel" id = "phonenumber" name = "phonenumber"><br><br>
+                    <label for = email>Email:</label>
+                    <input type = "email" id = "email" name = "email" required><br><br>
+                    <input type = "submit" id = "submit" value = "Sign Up"><br><br>
+                </div>
+                
+            </form>
+        </main>
+        
+        <footer>
+            <div id = "socialMedia">
+                <img src = "images_main/Facebook.png" alt = "Facebook Logo" id = "facebook" class = "footerImages">
+                <img src = "images_main/LinkedIn.png" alt = "LinkedIn Logo" id = "linkedin" class = "footerImages">
+            </div>
+            <div id = "footerLabels">
+                <label id = "aboutUs" onclick = "window.open('AboutUs.html', '_self')">About Us</label>
+                <label id = "help" onclick = "window.open('Help.html', '_self')">Help</label>
+                <label id = "businessPolicies" onclick = "window.open('BusinessPolicies.html', '_self')">Business Policies</label>
+                <label id = "copyright">Copyright Reserved</label>
+            </div>
+        </footer>
+    </body>
+</html>

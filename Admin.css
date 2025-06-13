@@ -1,0 +1,71 @@
+/* 
+    Created on : 01 Apr 2025, 13:27:48
+    Author     : Nicholas Leong EDUV4551823
+*/
+
+/*Auto scales*/
+    main{
+        display: grid;
+        grid-template-columns: 27.5% 27.5% 45%;
+    }
+
+    .divs{
+        /*border: solid 2.5px black;*/
+        height: 100%;
+    }
+
+    #items{/*fieldset id = "items"*/
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+        row-gap: 10px;
+        width: 500px;
+        height: 1000px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .itemborder{/*div class = 'itemborder'*/
+        display: flex;
+        flex-direction: column;
+        width: 6cm;
+        height: 12cm;
+        white-space: wrap;
+        border: 2px solid black;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .pic{
+        min-width: 6cm;
+        min-height: 6cm;
+    }
+
+    .information{
+        margin: 5px;
+    }
+
+    #reportSummary{
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    #messages{
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    #approve{
+        font-size: 16px;
+        background-color: gainsboro;
+        height: 21px;
+    }
+
+    #reject{
+        font-size: 16px;
+        background-color: lightcoral;
+        border-color: lightcoral;
+        height: 21px;
+    }

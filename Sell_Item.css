@@ -1,0 +1,44 @@
+/* 
+    Created on : 15 Mar 2025, 15:18:24
+    Author     : Nicholas Leong EDUV4551823
+*/
+
+/*Auto scales*/
+#enterInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+#itemPicture{
+    height: 6cm;
+    width: 6cm;
+    border: 1.5px solid black;
+}
+
+.inputBoxes{
+    width: 10cm;
+    height: 0.9cm;
+    border-radius: 10px;
+}
+
+#submit{
+    width: 6cm;
+    height: 1.8cm;
+    font-size: 17px;
+}
+
+#cancel{
+    width: 6cm;
+    height: 1.8cm;
+    font-size: 17px;
+    /*float: right;*/
+    margin-top: 7px;
+    margin-right: 0px;
+    margin-left: auto;
+    border-radius: 10px;
+    /*position: absolute;*/
+    background-color: tomato;
+}

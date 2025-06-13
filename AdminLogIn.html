@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html dir = "ltr" lang = "en">
+    <head>
+        <title>Administrator Log In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "Header_And_Footer.css">
+        <link rel = "stylesheet" href = "LogIn.css">
+    </head>
+    <body>
+        <header>
+            <img src = "images_main/Logo.png" alt = "Nick C2C Logo" id = "logo" onclick = "window.open('index.php', '_self')">
+            <div id = "buy_sell">
+                <label id = "buy">Buy</label>
+                <label id = "sell">Sell</label>
+            </div>
+            <div id = "searchbox">
+                <form action = "" method = "GET" target = "_self">
+                    <input type = "text" id = "search" name = "search">
+                    <input type = "submit" id = "btnSearch" value = "Search">
+                </form>
+            </div>
+            <div id = "account">
+                <label id = "user" onclick = "window.open('LogIn.html', '_self')">Log In</label>
+            </div>
+        </header>
+        <main>
+            <form action = "AdminLogIn.php" method = "POST">
+                <div id = "enterInfo">
+                    <label for = "email">Email: </label> 
+                    <input type = "text" id = "email" name = "email" required><br><br>
+                    <label for = "password">Password: </label>
+                    <input type = "password" id = "password" name = "password" required><br><br>
+                    <input type = "submit" id = "submit" value = "Log In"><br><br>
+                </div>
+            </form>
+        </main>
+        
+        <footer>
+            <div id = "socialMedia">
+                <img src = "images_main/Facebook.png" alt = "Facebook Logo" id = "facebook" class = "footerImages">
+                <img src = "images_main/LinkedIn.png" alt = "LinkedIn Logo" id = "linkedin" class = "footerImages">
+            </div>
+            <div id = "footerLabels">
+                <label id = "aboutUs">About Us</label>
+                <label id = "help">Help</label>
+                <label id = "businessPolicies">Business Policies</label>
+                <label id = "copyright">Copyright Reserved</label>
+            </div>
+        </footer>
+    </body>
+</html>

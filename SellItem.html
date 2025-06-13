@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--Nicholas Leong EDUV4551823-->
+<html dir = "ltr" lang = "en">
+    <head>
+        <title>Sell Item</title>
+        
+        <link rel = "stylesheet" href = "Header_And_Footer.css">
+        <link rel = "stylesheet" href = "Sell_Item.css">
+        
+        <script type = "text/javascript" src = "LogIn.js"></script>
+        
+        <script>
+            let itemPicture = document.getElementByID("itemPicture");
+            let imageInput = document.getElementByID("imageInput");
+            var uploaded_image = "";
+            
+//            const imageUpload = document.getElementById('imageUpload');
+
+            imageInput.addEventListener("change", function(event) {
+                const reader = new FileReader();
+                
+                reader.addEventListener("load", () => {
+                    uploaded_image = reader.result;
+                    itemPicture.src = `url(${uploaded_image})`;
+                });
+                reader.readAsDataURL(this.files[0]);
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <img src = "images_main/Logo.png" alt = "Nick C2C Logo" id = "logo" onclick = "window.open('index.php', '_self')">
+            <div id = "buy_sell">
+                <label id = "buy" onclick = "window.open('index.php', '_self')">Buy</label>
+                <label id = "sell" onclick = "whichScreen()">Sell</label>
+            </div>
+            <div id = "searchbox">
+                <form action = "Search.php" method = "GET">
+                    <input type = "text" id = "search" name = "search">
+                    <input type = "submit" id = "btnSearch" value = "Search">
+                </form>
+            </div>
+            <div id = "account">
+                <label id = "user" onclick = "whichScreen()" onload = "LogIn.js">Log In</label>
+            </div>
+        </header>
+        
+        <main>
+            <div id = "enterInfo">
+                <form action = "UploadInformation.php" method = "POST"  enctype="multipart/form-data">
+                    <label for = "itemName">Item Name: </label><br>
+                    <input type = "text" id = "itemName" name = "itemName" class = "inputBoxes"><br><br>
+                    <label>Item Picture: </label><br>
+                    <!--<input type = "image" id = "itemPicture" name = "itemPicture" src = "" alt = ""><br><br>-->
+                    <img src = "../images_main/White Square.png" alt = " " id = "itemPicture" name = "itemPicture"><br>
+                    <!--<div id = "itemPicture"></div>--><br>
+                    <input type = "file" id = "imageInput" name = "imageInput" accept = "image/*"><br>
+                    <label for = "price">Price: </label><br>
+                    <input type = "text" id = "price" name = "price"  class = "inputBoxes"><br><br>
+                    <label for = "description">Description: </label><br>
+                    <textarea id = "description" name = "description" rows = "5" cols = "50"></textarea><br><br>
+                    <input type = "submit" id = "submit" name = "submit" value = "Add Item">
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <div id = "socialMedia">
+                <img src = "images_main/Facebook.png" alt = "Facebook Logo" id = "facebook" class = "footerImages">
+                <img src = "images_main/LinkedIn.png" alt = "LinkedIn Logo" id = "linkedin" class = "footerImages">
+            </div>
+            <div id = "footerLabels">
+                <label id = "aboutUs" onclick = "window.open('AboutUs.html', '_self')">About Us</label>
+                <label id = "help" onclick = "window.open('Help.html', '_self')">Help</label>
+                <label id = "businessPolicies" onclick = "window.open('BusinessPolicies.html', '_self')">Business Policies</label>
+                <label id = "copyright">Copyright Reserved</label>
+            </div>
+        </footer>
+    </body>
+</html>

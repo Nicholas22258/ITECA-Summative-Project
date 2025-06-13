@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Nicholas Leong EDUV4551823-->
+<html dir = "ltr" lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Business Policies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "BusinessPolicies.css">
+        <link rel = "stylesheet" href = "Header_And_Footer.css">
+                
+        <script  type = "text/javascript" src = "LogIn.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src = "images_main/Logo.png" alt = "Nick C2C Logo" id = "logo" onclick = "window.open('index.php', '_self')">
+            <div id = "buy_sell">
+                <label id = "buy" onclick = "window.open('index.php', '_self')">Buy</label>
+                <label id = "sell" onclick = "whichScreen()">Sell</label>
+            </div>
+            <div id = "searchbox">
+                <form action = "Search.php" method = "GET">
+                    <input type = "text" id = "search" name = "search">
+                    <input type = "submit" id = "btnSearch" value = "Search">
+                </form>
+            </div>
+            <div id = "account">
+                <label id = "user" onclick = "whichScreen()" onload = "LogIn.js">Log In</label>
+            </div>
+        </header>
+        
+        <main>
+            <div id = "heading">
+                <h2>Business Policies</h2>
+            </div>
+            <div id = "policies">
+                <p>
+                    Although NickC2C has little control over what users want to sell, we do have various 
+                    measures to prevent criminal activity on the platform.
+                    When users wish to sell an item, the item's details is examined by our administrator to look for potential
+                    discrepancies in the item. Any items determined to be unacceptable will be rejected from being added to the platform.
+                    Our administrators also constantly learn about the latest scams so that they can keep an eye out for these potential scams
+                    on this platform.
+                    
+                    We do not consent to selling items that are considered to be illegal, dangerous, medicinal (that requires a prescription) or pornographic in nature. Any violation of this rule will result in the account holder being banned and his/her items removed from this site.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div id = "socialMedia">
+                <img src = "images_main/Facebook.png" alt = "Facebook Logo" id = "facebook" class = "footerImages">
+                <img src = "images_main/LinkedIn.png" alt = "LinkedIn Logo" id = "linkedin" class = "footerImages">
+            </div>
+            <div id = "footerLabels">
+                <label id = "aboutUs" onclick = "window.open('AboutUs.html', '_self')">About Us</label>
+                <label id = "help" onclick = "window.open('Help.html', '_self')">Help</label>
+                <label id = "businessPolicies" onclick = "window.open('BusinessPolicies.html', '_self')">Business Policies</label>
+                <label id = "copyright">Copyright Reserved</label>
+            </div>
+        </footer>
+    </body>
+</html>
