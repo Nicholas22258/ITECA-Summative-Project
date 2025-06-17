@@ -17,7 +17,7 @@
                 let selling = isSelling();//determines if the customer is already selling
         
                 if (selling === 0){
-                    if (confirm(message) === true){//gets permission
+                    if (confirm(message)){//gets permission
                         window.open("SellItem.html", "_self");
                         <?php include "SetSellingItems.php";?>
                     }
