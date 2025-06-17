@@ -11,7 +11,7 @@
     $phoneNumber = "";
     $password = "";
 
-    $link = mysqli_connect("sql106.infinityfree.com", "if0_39185259", "Ke1616Hu", "if0_39185259_nickc2c"); //connects to database
+    $link = mysqli_connect("localhost", "root", "", "nickc2c"); //connects to database
 
     if (!$link){//checks for connection
         die("Error: could not connect to database. ".mysqli_connect_error());
@@ -39,15 +39,15 @@
 
     if (!$alreadyExists){
         $query = mysqli_query($link, $insert_sql);
-        if ($check_query){
-            if (mysqli_num_rows($check_query) > 0){   //if the profile is found
-                while ($row = mysqli_fetch_assoc($check_query)){  //for each relevant row with this email
+//        if ($check_query){
+//            if (mysqli_num_rows($check_query) > 0){   //if the profile is found
+//                while ($row = mysqli_fetch_assoc($check_query)){  //for each relevant row with this email
                     setcookie('user', $username, time() + 86400/2, "/");    //expires after 12 hours
 
-                    $select_sql = "SELECT * FROM customer WHERE customer_id = (SELECT max(customer_id FROM customer))";//get the last record to get customer_id
-                    $query = mysqli_query($link, $select_sql);
-                    if (mysqli_num_rows($query) > 0){
-                        while ($rowID = mysqli_fetch_assoc($query)){
+                    $select_sql = "SELECT customer_id FROM customer ORDER BY customer_id DESC LIMIT 1";//get the last record to get customer_id
+                    $select_query = mysqli_query($link, $select_sql);
+                    if (mysqli_num_rows($select_query) > 0){
+                        while ($rowID = mysqli_fetch_assoc($select_query)){
                             setCookie('customerID', $rowID["customer_id"], time() + 86400/2, "/");
                         }
                     }
@@ -55,23 +55,23 @@
                     setCookie('password', md5($password), time() + 86400/2, "/");
                     setCookie('phoneNumber', $phoneNumber, time() + 86400/2, "/");
                     setCookie('email', $email, time() + 86400/2, "/");
-                    setCookie('selling', "false", time() + 86400/2, "/");
+                    setCookie('selling', 0, time() + 86400/2, "/");
 
                     $alert = "<script>alert('Account successfully created.');</script>";
                     echo $alert;
-                    header("location:index.php"); //go to homepage after Sidn up
+                    header("location:Homepage.php"); //go to homepage after Sidn up
                     exit();
-                }
-            }else{
-                $alert = "<script>alert('Query unsuccessful.');</script>";
-                echo $alert;
-            }
-        }else{
-            $alert = "<script>alert('Error in creating account. Please try again.');</script>";
-            echo $alert;
-            header("location:SignUp.html");
-            exit();
-        }
+//                }
+//            }else{
+//                $alert = "<script>alert('Query unsuccessful.');</script>";
+//                echo $alert;
+//            }
+//        }else{
+//            $alert = "<script>alert('Error in creating account. Please try again.');</script>";
+//            echo $alert;
+//            header("location:SignUp.html");
+//            exit();
+//        }
     }else{
         $alert = "<script>alert('Username already exists. Please try another username.');</script>";
         echo $alert; 
@@ -86,4 +86,3 @@
         return $data;
     }
 ?>
-
